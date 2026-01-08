@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernLib - Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>ModernLib</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="#home" onclick="scrollToSection('home')">Home</a>
+                <a href="#books" onclick="scrollToSection('books')">Books</a>
+                <a href="#about" onclick="scrollToSection('about')">About</a>
+                <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Welcome to the Future of Reading</h1>
+                    <p>Explore millions of books, audiobooks, and digital resources in our cutting-edge library platform</p>
+                    <div class="search-container">
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search for books, authors, genres...">
+                            <button>Find Books</button>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Books</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Members</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Access</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="books" class="featured-books">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trending Now</h2>
+                    <p>Discover what everyone's reading</p>
+                </div>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-cover sci-fi">
+                            <img src="https://m.media-amazon.com/images/I/81zN7udGRUL._AC_UF1000,1000_QL80_.jpg" alt="Dune Chronicles">
+                        </div>
+                        <div class="book-info">
+                            <h4>Dune Chronicles</h4>
+                            <p>Frank Herbert</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover fifty-grey">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1385207843i/10818853.jpg" alt="Fifty Shades of Grey">
+                        </div>
+                        <div class="book-info">
+                            <h4>Fifty Shades of Grey</h4>
+                            <p>E.L. James</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover fifty-darker">
+                            <img src="fifty shades.jpg" alt="Fifty Shades Darker">
+                        </div>
+                        <div class="book-info">
+                            <h4>Fifty Shades Darker</h4>
+                            <p>E.L. James</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover tech">
+                            <img src="https://m.media-amazon.com/images/I/515iEcDr1GL._AC_UF1000,1000_QL80_.jpg" alt="Clean Code">
+                        </div>
+                        <div class="book-info">
+                            <h4>Clean Code</h4>
+                            <p>Robert C. Martin</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About ModernLib</h2>
+                    <p>Your gateway to endless literary adventures</p>
+                </div>
+                <div class="about-info">
+                    <h3>Welcome to ModernLib</h3>
+                    <p>Established in 2020, ModernLib is a state-of-the-art digital library serving the community with over 50,000 books, audiobooks, and digital resources. Our mission is to make knowledge accessible to everyone, anywhere, anytime.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Vast Collection</h3>
+                        <p>Over 50,000 books spanning every genre - from classic literature to contemporary bestsellers, sci-fi epics to romance novels</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Always Open</h3>
+                        <p>Our digital library never closes. Browse, borrow, and read 24/7 from the comfort of your home or on the go</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Curated Selection</h3>
+                        <p>Handpicked books by our expert librarians, featuring award winners, hidden gems, and reader favorites across all categories</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Get In Touch</h2>
+                    <p>Visit us, call us, or reach out online - we're here to help with all your reading needs</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Knowledge Avenue<br>Digital District, Tech City 12345<br>United States</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(555) 123-BOOK<br>(555) 123-2665</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@modernlib.com<br>support@modernlib.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Digital Access: 24/7<br>Support: Mon-Fri 9AM-6PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-buttons">
+                        <button class="btn-primary">Get Started Free</button>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>ModernLib</span>
+                    </div>
+                    <p>Revolutionizing how you discover and enjoy books</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#">Browse Books</a>
+                    <a href="#">Audiobooks</a>
+                    <a href="#">Book Reviews</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ModernLib. Designed for book lovers, by book lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const elementPosition = element.offsetTop - headerHeight;
+            
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            const nav = document.getElementById('nav');
+            nav.classList.remove('active');
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
