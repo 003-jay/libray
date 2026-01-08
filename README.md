@@ -4,9 +4,14 @@ A modern, responsive digital library website template built with HTML, CSS, and 
 
 ## 🚀 Live Demo
 
-**[View Live Demo](https://your-username.github.io/libray/)**
+**To set up your own live demo:**
 
-*Replace with your actual GitHub Pages or hosting URL*
+1. **GitHub Pages**: Push to GitHub and enable Pages in repository settings
+2. **Netlify**: Drag and drop your project folder to [netlify.com](https://netlify.com)
+3. **Vercel**: Connect your GitHub repo to [vercel.com](https://vercel.com)
+4. **Local Preview**: Simply open `index.html` in your browser
+
+*The template works perfectly when opened locally - no server required!*
 
 ## ✨ Features
 
